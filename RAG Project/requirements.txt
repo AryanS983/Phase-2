@@ -1,0 +1,23 @@
+# LangChain
+langchain
+langchain-core
+langchain-community
+langchain-mistralai
+
+# Mistral
+mistralai
+
+# Vector Database
+chromadb
+
+# Document Loaders
+pypdf
+python-docx
+
+# Environment
+python-dotenv
+
+# Utilities
+tiktoken
+httpx
+tqdm
