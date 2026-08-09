@@ -16,15 +16,16 @@ docs = [
 ]
 
 ids = [f"doc_{i}" for i in range(len(docs))]
-# vector_store = Chroma.from_documents(
-#     documents=docs,
-#     embedding=embeddings,
-#     ids=ids,
-#     collection_name="programming_languages",
-#     persist_directory="./chroma_langchain_db",  # Where to save data locally, remove if not necessary
-# )
+
+vector_store = Chroma.from_documents(
+    documents=docs,
+    embedding=embeddings,
+    ids=ids,
+    collection_name="programming_languages",
+    persist_directory="./chroma_langchain_db",  # Where to save data locally, remove if not necessary
+)
 
 
-result =  vector_store.similarity_search("What is used for making games", k=2)
+result =  vector_store.similarity_search("What is used for making games", k=1)
 
 print(result)
