@@ -91,6 +91,7 @@ while True:
             for tool_call in result.tool_calls:
                 tool_name = tool_call["name"]
 
+                #man in the middle interation
                 confirm = input(f"Tool {tool_name} required. Do you want to use it? (y/n) ")
                 if confirm.lower() != "y":
                     continue
